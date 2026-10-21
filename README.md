@@ -8,8 +8,8 @@
 
 Claude Code or Codex does the work. You just press OK on the remote.
 
-[![Release](https://img.shields.io/github/v/release/Ansub/tv-detox?color=black)](https://github.com/Ansub/tv-detox/releases/latest)
-[![Tests](https://img.shields.io/github/actions/workflow/status/Ansub/tv-detox/build.yml?branch=main&label=tests)](https://github.com/Ansub/tv-detox/actions)
+[![Release](https://img.shields.io/github/v/release/Chuckame/tv-detox?color=black)](https://github.com/Chuckame/tv-detox/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/Chuckame/tv-detox/build.yml?branch=main&label=tests)](https://github.com/Chuckame/tv-detox/actions)
 [![License](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@ansubkhan-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@ansubkhan)
 
@@ -77,7 +77,7 @@ My TV is a <brand and model>.
    (com.google.android.apps.tv.launcherx). If you're not
    sure, leave it on.
 6. Install the home screen: download
-   https://github.com/Ansub/tv-detox and run its
+   https://github.com/Chuckame/tv-detox and run its
    install.sh with my TV and these apps: <your apps>.
 7. Turn off animations and make the TV sleep after 5
    minutes. Then check the model name and ask me if the TV
@@ -203,7 +203,7 @@ If the TV ever asks to be set up again, or a setup screen won't finish, turn the
 
 Tested on a TCL Smart TV Pro (Google TV, Android 14, 2.3 GB of RAM). Every step below was followed by a restart, and the TV started normally each time. Free memory went from about 660 MB to about 1 GB, though part of that is just from restarting: the first number was taken after the TV had been on for 15 days.
 
-**Home screen.** With Google TV's home screen off, Home opened the setup app's recovery screen, as in [#16](https://github.com/Ansub/tv-detox/issues/16). Turning the setup app off too (`YES_SETUP=1`) made this home screen stick, through several restarts.
+**Home screen.** With Google TV's home screen off, Home opened the setup app's recovery screen, as in [#16](https://github.com/Chuckame/tv-detox/issues/16). Turning the setup app off too (`YES_SETUP=1`) made this home screen stick, through several restarts.
 
 **Connect on port 5555.** If you connected with **Wireless debugging** (pairing code), turning the setup app off ends that connection halfway through `install.sh`. The script then says it couldn't turn the setup app off, even though it did. On this TV, the classic port also worked, so you can reconnect with `adb connect <TV_IP>:5555`, check with `adb shell pm list packages -d`, and run `install.sh` again with that address.
 
@@ -477,7 +477,7 @@ Pull requests are welcome for fixes that keep working on every TV. This project 
 
 <div align="center">
 
-Made by **Ansub Khan**. I build things like this with AI every week.
+Made by **Chuckame Khan**. I build things like this with AI every week.
 
 [**Watch on YouTube →**](https://www.youtube.com/@ansubkhan)
 
